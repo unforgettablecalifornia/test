@@ -42,3 +42,5 @@
         git remote set-url origin git@github2:freehost/mail.git
         5验证
             ssh -T git@别名 -v
+
+        大功告成
