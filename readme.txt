@@ -7,12 +7,12 @@
     ssh-keygen -t rsa -C 'second@mail.com' -f id_rsa_second  
     2.将新的公钥添加到github仓库
     3.在~/.ssh目录下创建config文件，该文件用于配置私钥对应的账户和服务器
-        Host 1   
+        Host github1   #建一个github别名，新建的帐号使用这个别名做克隆和更新
             HostName github.com  
             User user1  
             Port 22  
             IdentityFile ~/.ssh/id_rsa_second 
-        Host 2   
+        Host github2   
             HostName github.com  
             User user2  
             Port 22  
@@ -20,13 +20,13 @@
         /**
          * 模板
          */
-        Host github.com
+        Host github.com1
             HostName github.com
             User user1
             PreferredAuthentications publickey
             IdentityFile ~/.ssh/id_rsa.user1
 
-        Host github.com
+        Host github.com2
             HostName github.com
             User user2
             PreferredAuthentications publickey
@@ -38,3 +38,5 @@
             PreferredAuthentications publickey
             IdentityFile ~/.ssh/id_rsa.user3
         这样配置，也就是使用hostname为github.com并且会根据用户名的不同，去使用不用的private key这样就不会像https方式push的时候需要输入密码。很方便很快捷，基本是一劳永逸了。github上，也可以添加对应的公钥。其实这个配置是关于ssh的与git并没有多大关系，只是git使用的方式是ssh的方式。其实ssh还有很多种的配置方式。在ubuntu下，可以使用man命令查看帮助。
+        4将GitHub SSH仓库地址中的git@github.com替换成新建的Host别名
+        git remote set-url origin git@github2:freehost/mail.git
