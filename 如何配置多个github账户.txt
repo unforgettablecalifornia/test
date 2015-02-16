@@ -40,4 +40,5 @@
         这样配置，也就是使用hostname为github.com并且会根据用户名的不同，去使用不用的private key这样就不会像https方式push的时候需要输入密码。很方便很快捷，基本是一劳永逸了。github上，也可以添加对应的公钥。其实这个配置是关于ssh的与git并没有多大关系，只是git使用的方式是ssh的方式。其实ssh还有很多种的配置方式。在ubuntu下，可以使用man命令查看帮助。
         4将GitHub SSH仓库地址中的git@github.com替换成新建的Host别名
         git remote set-url origin git@github2:freehost/mail.git
-        
+        5验证
+            ssh -T git@别名 -v
