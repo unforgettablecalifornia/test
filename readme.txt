@@ -1,1 +1,40 @@
-hello git
+多个git远程仓库的配置
+    目前的git远程仓库诸如github都是通过使用ssh与客户端链接，如果只是固定使用单个git仓库的单个用户，生成秘钥对后，将公钥保存在github上，每次链接时ssh客户端发送本地私钥(默认~/.ssh/id_rsa)到服务端验证。单用户情况下，链接的服务器上保存的公钥和发送的私钥自然是配对的。
+现有问题：
+    实际工作中，我们可能有同一个机器上链接多个github账户的需求。而默认情况下，ssh总是使用id_rsa秘钥文件进行链接，这样对于第二个账户的认证自然是无法通过的。
+解决办法：
+    1.在~/.ssh下使用ssh-keygen命令为你的新账户生成心的ssh key
+    ssh-keygen -t rsa -C 'second@mail.com' -f id_rsa_second  
+    2.将新的公钥添加到github仓库
+    3.在~/.ssh目录下创建config文件，该文件用于配置私钥对应的账户和服务器
+        Host 1   
+            HostName github.com  
+            User user1  
+            Port 22  
+            IdentityFile ~/.ssh/id_rsa_second 
+        Host 2   
+            HostName github.com  
+            User user2  
+            Port 22  
+            IdentityFile ~/.ssh/id_rsa  
+        /**
+         * 模板
+         */
+        Host github.com
+            HostName github.com
+            User user1
+            PreferredAuthentications publickey
+            IdentityFile ~/.ssh/id_rsa.user1
+
+        Host github.com
+            HostName github.com
+            User user2
+            PreferredAuthentications publickey
+            IdentityFile ~/.ssh/id_rsa.user2
+
+        Host jd.com
+            HostName jd.com
+            User user3
+            PreferredAuthentications publickey
+            IdentityFile ~/.ssh/id_rsa.user3
+        这样配置，也就是使用hostname为github.com并且会根据用户名的不同，去使用不用的private key这样就不会像https方式push的时候需要输入密码。很方便很快捷，基本是一劳永逸了。github上，也可以添加对应的公钥。其实这个配置是关于ssh的与git并没有多大关系，只是git使用的方式是ssh的方式。其实ssh还有很多种的配置方式。在ubuntu下，可以使用man命令查看帮助。
