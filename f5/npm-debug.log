@@ -1,0 +1,162 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\\\node.exe',
+1 verbose cli   'D:\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'grunt-contrib-connect@0.7.1',
+1 verbose cli   '–save-dev' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose node symlink D:\\node.exe
+5 warn package.json test12@1.0.0 No description
+6 warn package.json test12@1.0.0 No repository field.
+7 warn package.json test12@1.0.0 No README data
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'grunt-contrib-connect@0.7.1', null ]
+10 verbose cache add name=undefined spec="grunt-contrib-connect@0.7.1" args=["grunt-contrib-connect@0.7.1",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'grunt-contrib-connect@0.7.1',
+11 verbose parsed url   path: 'grunt-contrib-connect@0.7.1',
+11 verbose parsed url   href: 'grunt-contrib-connect@0.7.1' }
+12 verbose cache add [ '–save-dev', null ]
+13 verbose cache add name=undefined spec="–save-dev" args=["–save-dev",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: '–save-dev',
+14 verbose parsed url   path: '–save-dev',
+14 verbose parsed url   href: '–save-dev' }
+15 verbose cache add name="grunt-contrib-connect" spec="0.7.1" args=["grunt-contrib-connect","0.7.1"]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: '0.7.1',
+16 verbose parsed url   path: '0.7.1',
+16 verbose parsed url   href: '0.7.1' }
+17 verbose addNamed [ 'grunt-contrib-connect', '0.7.1' ]
+18 verbose addNamed [ '0.7.1', '0.7.1' ]
+19 silly lockFile f2996f7e-grunt-contrib-connect-0-7-1 grunt-contrib-connect@0.7.1
+20 verbose lock grunt-contrib-connect@0.7.1 C:\Users\WuDongXu\AppData\Roaming\npm-cache\f2996f7e-grunt-contrib-connect-0-7-1.lock
+21 verbose request where is /grunt-contrib-connect
+22 verbose request registry https://registry.npmjs.org/
+23 verbose request id 8ecb01d4b5eb4719
+24 verbose url raw /grunt-contrib-connect
+25 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-connect' ]
+26 verbose url resolved https://registry.npmjs.org/grunt-contrib-connect
+27 verbose request where is https://registry.npmjs.org/grunt-contrib-connect
+28 info trying registry request attempt 1 at 17:26:05
+29 verbose etag "1ON8MVVV11PZ56D89QPQY89ZS"
+30 http GET https://registry.npmjs.org/grunt-contrib-connect
+31 silly lockFile 36ac6028-save-dev –save-dev
+32 verbose lock –save-dev C:\Users\WuDongXu\AppData\Roaming\npm-cache\36ac6028-save-dev.lock
+33 silly lockFile 36ac6028-save-dev –save-dev
+34 silly lockFile 36ac6028-save-dev –save-dev
+35 verbose addNamed [ '–save-dev', '' ]
+36 verbose addNamed [ null, '*' ]
+37 silly lockFile 370b9e36-save-dev –save-dev@
+38 verbose lock –save-dev@ C:\Users\WuDongXu\AppData\Roaming\npm-cache\370b9e36-save-dev.lock
+39 silly addNameRange { name: '–save-dev', range: '*', hasData: false }
+40 verbose request where is /–save-dev
+41 verbose request registry https://registry.npmjs.org/
+42 verbose url raw /–save-dev
+43 verbose url resolving [ 'https://registry.npmjs.org/', './%E2%80%93save-dev' ]
+44 verbose url resolved https://registry.npmjs.org/%E2%80%93save-dev
+45 verbose request where is https://registry.npmjs.org/%E2%80%93save-dev
+46 info trying registry request attempt 1 at 17:26:05
+47 http GET https://registry.npmjs.org/%E2%80%93save-dev
+48 http 304 https://registry.npmjs.org/grunt-contrib-connect
+49 silly registry.get cb [ 304,
+49 silly registry.get   { date: 'Thu, 26 Feb 2015 09:27:48 GMT',
+49 silly registry.get     server: 'Apache',
+49 silly registry.get     via: '1.1 varnish',
+49 silly registry.get     'last-modified': 'Thu, 26 Feb 2015 09:27:48 GMT',
+49 silly registry.get     'cache-control': 'max-age=60',
+49 silly registry.get     etag: '"1ON8MVVV11PZ56D89QPQY89ZS"',
+49 silly registry.get     age: '4',
+49 silly registry.get     'x-served-by': 'cache-nrt6127-NRT',
+49 silly registry.get     'x-cache': 'HIT',
+49 silly registry.get     'x-cache-hits': '1',
+49 silly registry.get     'x-timer': 'S1424942868.052328,VS0,VE1',
+49 silly registry.get     vary: 'Accept',
+49 silly registry.get     'content-length': '0',
+49 silly registry.get     'keep-alive': 'timeout=10, max=50',
+49 silly registry.get     connection: 'Keep-Alive' } ]
+50 verbose etag https://registry.npmjs.org/grunt-contrib-connect from cache
+51 silly lockFile 159ab9f5--grunt-contrib-connect-0-7-1-tgz https://registry.npmjs.org/grunt-contrib-connect/-/grunt-contrib-connect-0.7.1.tgz
+52 verbose lock https://registry.npmjs.org/grunt-contrib-connect/-/grunt-contrib-connect-0.7.1.tgz C:\Users\WuDongXu\AppData\Roaming\npm-cache\159ab9f5--grunt-contrib-connect-0-7-1-tgz.lock
+53 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-contrib-connect/-/grunt-contrib-connect-0.7.1.tgz',
+53 verbose addRemoteTarball   'cad8de445a8105b34912d1c20238cce98dc13ebe' ]
+54 info retry fetch attempt 1 at 17:26:05
+55 verbose fetch to= C:\Users\WuDongXu\AppData\Local\Temp\npm-5800-13ByzXR7\registry.npmjs.org\grunt-contrib-connect\-\grunt-contrib-connect-0.7.1.tgz
+56 http GET https://registry.npmjs.org/grunt-contrib-connect/-/grunt-contrib-connect-0.7.1.tgz
+57 http 200 https://registry.npmjs.org/grunt-contrib-connect/-/grunt-contrib-connect-0.7.1.tgz
+58 silly lockFile 159ab9f5--grunt-contrib-connect-0-7-1-tgz https://registry.npmjs.org/grunt-contrib-connect/-/grunt-contrib-connect-0.7.1.tgz
+59 silly lockFile 159ab9f5--grunt-contrib-connect-0-7-1-tgz https://registry.npmjs.org/grunt-contrib-connect/-/grunt-contrib-connect-0.7.1.tgz
+60 silly lockFile f2996f7e-grunt-contrib-connect-0-7-1 grunt-contrib-connect@0.7.1
+61 silly lockFile f2996f7e-grunt-contrib-connect-0-7-1 grunt-contrib-connect@0.7.1
+62 http 404 https://registry.npmjs.org/%E2%80%93save-dev
+63 verbose headers { date: 'Thu, 26 Feb 2015 09:27:48 GMT',
+63 verbose headers   server: 'CouchDB/1.6.1 (Erlang OTP/R14B04)',
+63 verbose headers   'content-type': 'application/json',
+63 verbose headers   'cache-control': 'max-age=0',
+63 verbose headers   'content-length': '52',
+63 verbose headers   'accept-ranges': 'bytes',
+63 verbose headers   via: '1.1 varnish',
+63 verbose headers   age: '0',
+63 verbose headers   'x-served-by': 'cache-nrt6120-NRT',
+63 verbose headers   'x-cache': 'MISS',
+63 verbose headers   'x-cache-hits': '0',
+63 verbose headers   'x-timer': 'S1424942868.059588,VS0,VE739',
+63 verbose headers   'keep-alive': 'timeout=10, max=50',
+63 verbose headers   connection: 'Keep-Alive' }
+64 silly registry.get cb [ 404,
+64 silly registry.get   { date: 'Thu, 26 Feb 2015 09:27:48 GMT',
+64 silly registry.get     server: 'CouchDB/1.6.1 (Erlang OTP/R14B04)',
+64 silly registry.get     'content-type': 'application/json',
+64 silly registry.get     'cache-control': 'max-age=0',
+64 silly registry.get     'content-length': '52',
+64 silly registry.get     'accept-ranges': 'bytes',
+64 silly registry.get     via: '1.1 varnish',
+64 silly registry.get     age: '0',
+64 silly registry.get     'x-served-by': 'cache-nrt6120-NRT',
+64 silly registry.get     'x-cache': 'MISS',
+64 silly registry.get     'x-cache-hits': '0',
+64 silly registry.get     'x-timer': 'S1424942868.059588,VS0,VE739',
+64 silly registry.get     'keep-alive': 'timeout=10, max=50',
+64 silly registry.get     connection: 'Keep-Alive' } ]
+65 silly lockFile 370b9e36-save-dev –save-dev@
+66 silly lockFile 370b9e36-save-dev –save-dev@
+67 error 404 404 Not Found: %E2%80%93save-dev
+67 error 404
+67 error 404 '%E2%80%93save-dev' is not in the npm registry.
+67 error 404 You should bug the author to publish it
+67 error 404 It was specified as a dependency of 'test12'
+67 error 404
+67 error 404 Note that you can also install from a
+67 error 404 tarball, folder, or http url, or git url.
+68 error System Windows_NT 6.1.7601
+69 error command "D:\\\\node.exe" "D:\\node_modules\\npm\\bin\\npm-cli.js" "install" "grunt-contrib-connect@0.7.1" "–save-dev"
+70 error cwd E:\test12
+71 error node -v v0.10.32
+72 error npm -v 1.4.28
+73 error code E404
+74 verbose exit [ 1, true ]
